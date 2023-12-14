@@ -2,7 +2,7 @@
 
 **If you want to see how to create a beautifull carousel, please check out my code ♥️👀**
 
-
+https://github.com/Mehrsa-Mohajeri-Developer/Carousel/assets/145048780/1deb8aa4-6b97-4e3d-ac42-69ba94bef434
 
 - 🔗 [Demo Project](https://mehrsa-mohajeri-developer.github.io/Carousel/)
   
