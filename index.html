@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #333333;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        }
+
+        main {
+            width: 250px;
+            height: 200px;
+            margin: 0px auto;
+            padding: 100px 0;
+            position: relative;
+            transform-style: preserve-3d;
+            perspective: 1000px;
+        }
+
+        section {
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            transform-style: preserve-3d;
+            transition: transform 1s;
+
+            >div {
+                margin: 100px auto;
+                width: 250px;
+                height: 200px;
+                border-radius: 10px;
+                text-align: center;
+                line-height: 200px;
+                color: white;
+                font-weight: bolder;
+                font-size: 100px;
+                position: absolute;
+                opacity: 0.95;
+            }
+        }
+
+        .a {
+            transform: rotateY(0deg) translateZ(250px);
+            background-color: #e32026;
+        }
+
+        .b {
+            transform: rotateY(60deg) translateZ(250px);
+            background-color: #066fb4;
+        }
+
+        .c {
+            transform: rotateY(120deg) translateZ(250px);
+            background: #39b54a;
+        }
+
+        .d {
+            transform: rotateY(180deg) translateZ(250px);
+            background: #f26522;
+        }
+
+        .e {
+            transform: rotateY(240deg) translateZ(250px);
+            background: #630460;
+        }
+
+        .f {
+            transform: rotateY(300deg) translateZ(250px);
+            background: #8c6239;
+        }
+
+        .next,
+        .previous {
+            color: #444;
+            position: absolute;
+            top: 100px;
+            padding: 15px 25px;
+            cursor: pointer;
+            background: #CCC;
+            border-radius: 5px;
+            box-shadow: 0 5px 0 #999;
+            transition: .2s;
+        }
+
+        .next:hover,
+        .previous:hover {
+            color: #000;
+        }
+
+        .next:active,
+        .previous:active {
+            top: 104px;
+            box-shadow: 0 1px 0 #999;
+        }
+
+        .next {
+            right: 80px;
+        }
+
+        .previous {
+            left: 80px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <section>
+            <div class="a">A</div>
+            <div class="b">B</div>
+            <div class="c">C</div>
+            <div class="d">D</div>
+            <div class="e">E</div>
+            <div class="f">F</div>
+        </section>
+    </main>
+    <div class="next">Next</div>
+    <div class="previous">Previous</div>
+    <script src="master.js"></script>
+</body>
+
+</html>
